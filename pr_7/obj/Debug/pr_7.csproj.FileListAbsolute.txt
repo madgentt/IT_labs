@@ -1,0 +1,9 @@
+C:\Users\student\source\repos\IT_labs\pr_7\bin\Debug\pr_7.exe.config
+C:\Users\student\source\repos\IT_labs\pr_7\bin\Debug\pr_7.exe
+C:\Users\student\source\repos\IT_labs\pr_7\bin\Debug\pr_7.pdb
+C:\Users\student\source\repos\IT_labs\pr_7\obj\Debug\pr_7.csprojAssemblyReference.cache
+C:\Users\student\source\repos\IT_labs\pr_7\obj\Debug\pr_7.Form1.resources
+C:\Users\student\source\repos\IT_labs\pr_7\obj\Debug\pr_7.Properties.Resources.resources
+C:\Users\student\source\repos\IT_labs\pr_7\obj\Debug\pr_7.csproj.GenerateResource.cache
+C:\Users\student\source\repos\IT_labs\pr_7\obj\Debug\pr_7.exe
+C:\Users\student\source\repos\IT_labs\pr_7\obj\Debug\pr_7.pdb

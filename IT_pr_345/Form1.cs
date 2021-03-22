@@ -88,6 +88,8 @@ namespace IT_pr_4
     {
       if (number == 1)
         return 1;
+      if (number == 0)
+        return 1;
       else
         return number * fact(number - 1);
 
@@ -106,6 +108,8 @@ namespace IT_pr_4
         i++;
       }
       textBox1.Text = "При eps = " + Convert.ToString(eps) + Environment.NewLine + "sum =" + Convert.ToString(sum);
+
+
     }
 
     public void pr_5()
@@ -128,18 +132,24 @@ namespace IT_pr_4
     private void button1_Click(object sender, EventArgs e)
     {
       double x = 0;
+      if (Fx_switch == 6)
+      {
+        pr_6();
+
+      }
       if (Fx_switch == 5)
       {
         pr_5();
       }
+     
       if (double.TryParse(textBox2.Text, out x))  
       {
         if (Fx_switch == 4)
         {
           pr_4(x);
         }
-        else
-          pr_3(x);
+        
+          //pr_3(x);
       }
       else
       {
@@ -165,6 +175,32 @@ namespace IT_pr_4
       label1.Visible = false;
       textBox2.Visible = false;
       listBox1.Visible = true;
+    }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+      Fx_switch = 6;
+      label1.Text = "Введите верхнюю границу";
+      textBox1.Visible = true;
+      label1.Visible = true;
+      textBox2.Visible = true;
+      listBox1.Visible = false;
+    }
+
+    public void pr_6()
+    {
+      double sum = 1;
+      int n = 0;
+      double nf = 0;
+      if (int.TryParse(textBox2.Text, out n))
+      {
+        for (int i = 1; i < n+1; i++)
+        {
+          nf = fact(i);
+          sum = sum * (((3 * nf) - 1) / (i + 1));
+        }
+        textBox1.Text = "При n = " + Convert.ToString(n)   + "sum =" + Convert.ToString(sum);
+      }
     }
   }
 }

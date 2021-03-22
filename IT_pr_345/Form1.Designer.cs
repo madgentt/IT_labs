@@ -30,16 +30,17 @@
     {
       this.textBox1 = new System.Windows.Forms.TextBox();
       this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.radioButton5 = new System.Windows.Forms.RadioButton();
+      this.radioButton4 = new System.Windows.Forms.RadioButton();
       this.radioButton3 = new System.Windows.Forms.RadioButton();
       this.radioButton2 = new System.Windows.Forms.RadioButton();
       this.radioButton1 = new System.Windows.Forms.RadioButton();
       this.textBox2 = new System.Windows.Forms.TextBox();
       this.label1 = new System.Windows.Forms.Label();
       this.button1 = new System.Windows.Forms.Button();
-      this.radioButton4 = new System.Windows.Forms.RadioButton();
       this.listBox1 = new System.Windows.Forms.ListBox();
-      this.radioButton5 = new System.Windows.Forms.RadioButton();
       this.label2 = new System.Windows.Forms.Label();
+      this.radioButton6 = new System.Windows.Forms.RadioButton();
       this.groupBox1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -53,6 +54,7 @@
       // 
       // groupBox1
       // 
+      this.groupBox1.Controls.Add(this.radioButton6);
       this.groupBox1.Controls.Add(this.radioButton5);
       this.groupBox1.Controls.Add(this.radioButton4);
       this.groupBox1.Controls.Add(this.radioButton3);
@@ -64,6 +66,28 @@
       this.groupBox1.TabIndex = 1;
       this.groupBox1.TabStop = false;
       this.groupBox1.Text = " Практика";
+      // 
+      // radioButton5
+      // 
+      this.radioButton5.AutoSize = true;
+      this.radioButton5.Location = new System.Drawing.Point(67, 43);
+      this.radioButton5.Name = "radioButton5";
+      this.radioButton5.Size = new System.Drawing.Size(81, 17);
+      this.radioButton5.TabIndex = 4;
+      this.radioButton5.Text = "5 практика";
+      this.radioButton5.UseVisualStyleBackColor = true;
+      this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+      // 
+      // radioButton4
+      // 
+      this.radioButton4.AutoSize = true;
+      this.radioButton4.Location = new System.Drawing.Point(67, 20);
+      this.radioButton4.Name = "radioButton4";
+      this.radioButton4.Size = new System.Drawing.Size(81, 17);
+      this.radioButton4.TabIndex = 3;
+      this.radioButton4.Text = "4 практика";
+      this.radioButton4.UseVisualStyleBackColor = true;
+      this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
       // 
       // radioButton3
       // 
@@ -127,17 +151,6 @@
       this.button1.UseVisualStyleBackColor = true;
       this.button1.Click += new System.EventHandler(this.button1_Click);
       // 
-      // radioButton4
-      // 
-      this.radioButton4.AutoSize = true;
-      this.radioButton4.Location = new System.Drawing.Point(67, 20);
-      this.radioButton4.Name = "radioButton4";
-      this.radioButton4.Size = new System.Drawing.Size(81, 17);
-      this.radioButton4.TabIndex = 3;
-      this.radioButton4.Text = "4 практика";
-      this.radioButton4.UseVisualStyleBackColor = true;
-      this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
-      // 
       // listBox1
       // 
       this.listBox1.FormattingEnabled = true;
@@ -151,17 +164,6 @@
       this.listBox1.Size = new System.Drawing.Size(453, 355);
       this.listBox1.TabIndex = 5;
       // 
-      // radioButton5
-      // 
-      this.radioButton5.AutoSize = true;
-      this.radioButton5.Location = new System.Drawing.Point(67, 43);
-      this.radioButton5.Name = "radioButton5";
-      this.radioButton5.Size = new System.Drawing.Size(81, 17);
-      this.radioButton5.TabIndex = 4;
-      this.radioButton5.Text = "5 практика";
-      this.radioButton5.UseVisualStyleBackColor = true;
-      this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
-      // 
       // label2
       // 
       this.label2.AutoSize = true;
@@ -170,6 +172,17 @@
       this.label2.Size = new System.Drawing.Size(35, 13);
       this.label2.TabIndex = 6;
       this.label2.Text = "label2";
+      // 
+      // radioButton6
+      // 
+      this.radioButton6.AutoSize = true;
+      this.radioButton6.Location = new System.Drawing.Point(67, 66);
+      this.radioButton6.Name = "radioButton6";
+      this.radioButton6.Size = new System.Drawing.Size(89, 17);
+      this.radioButton6.TabIndex = 5;
+      this.radioButton6.Text = "4 практика у";
+      this.radioButton6.UseVisualStyleBackColor = true;
+      this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
       // 
       // Form1
       // 
@@ -206,6 +219,7 @@
     private System.Windows.Forms.RadioButton radioButton5;
     private System.Windows.Forms.ListBox listBox1;
     private System.Windows.Forms.Label label2;
-  }
+        private System.Windows.Forms.RadioButton radioButton6;
+    }
 }
 
